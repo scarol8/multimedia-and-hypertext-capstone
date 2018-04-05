@@ -633,14 +633,14 @@ species.</td>
         
 
         #UNCOMMENT FOR PDF VERSION
-        #pk.from_file(user_file.name, 'ReportsPDF/'+ name + '.pdf')  #can also make pdf from html webpage 
+    pk.from_file(user_file.name, 'ReportsPDF/'+ first_name+last_name + '.pdf')  #can also make pdf from html webpage 
 
     
 
 def main():
 
     #runs the script from API that pulls csv from qualtrics
-    #execfile("downloadResults.py")
+    execfile("downloadResults.py")
     
     #reads the pulled(updated) csv to parse
     df1=pd.read_csv("MyQualtricsDownload/Updated Survey Final.csv")
